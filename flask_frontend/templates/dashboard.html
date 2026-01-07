@@ -1,0 +1,14 @@
+{% extends "base.html" %} {% block title %}Dashboard - Auth App{% endblock %} {%
+block content %}
+<div class="welcome">
+  <h2>Welcome, {{ username }}!</h2>
+  <p>You have successfully logged in.</p>
+  <p>This is your dashboard page.</p>
+  <button
+    class="logout-btn"
+    onclick="window.location.href='{{ url_for('logout') }}'"
+  >
+    Logout
+  </button>
+</div>
+{% endblock %}
